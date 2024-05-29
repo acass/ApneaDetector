@@ -34,7 +34,8 @@ def evaluate_sleep_apnea(recording_time, lowest_spo2, num_drops_per_hour):
 
 
 def main():
-    st.title("Sleep Apnea Evaluator")
+    st.set_page_config(page_title="Sleep Apnea Detection")
+    st.title("Sleep Apnea Detection")
 
     recording_time = st.number_input("Enter the recording time in hours:", min_value=0.0, format="%.2f")
     lowest_spo2 = st.number_input("Enter the lowest SpO2 percentage:", min_value=0, max_value=100)
